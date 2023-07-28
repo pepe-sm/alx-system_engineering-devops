@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#find file infinity and beyond and terminate it
+to_kill=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$to_kill"
