@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#print pid of all bash directories simplified
+pgrep -l bash
