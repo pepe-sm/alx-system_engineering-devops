@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# show proceeses with bash
+# shellcheck disable=SC2009
+ps faux | grep bash
