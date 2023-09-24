@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# connnect to seerver using ssh
+
+ssh -i ~/.ssh/school ubuntu@35.175.64.173
