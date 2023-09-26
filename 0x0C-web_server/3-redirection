@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#Redirection creation of chhild
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo service nginx start
+
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+
+otherdefault="/etc/nginx/sites-enabled/default"
+location="\\\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com;\n\t}\n"
+sudo sed -i "301 $location" "$otherdefault"
+sudo service nginx restart
