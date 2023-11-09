@@ -5,7 +5,7 @@ import requests
 headers = {"User-Agent": "MyCustomUserAgent/1.0"}
 
 def number_of_subscribers(subreddit):
-"""function queries the Reddit API"""
+    """function queries the Reddit API"""
 
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     response = requests.get(url, allow_redirects=False, headers=headers)
